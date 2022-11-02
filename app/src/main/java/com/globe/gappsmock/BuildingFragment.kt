@@ -29,25 +29,22 @@ class BuildingFragment : Fragment(){
         val floors = resources.getStringArray(R.array.floors)
         // get id of spinner
         val dropDown = view?.findViewById<Spinner>(R.id.dropFloors)
-
-
-
-
-            //get the list of string to an adapter for dropDown(Spinner)
-            val adapter = activity?.let {
-                ArrayAdapter(
-                    it,
-                    android.R.layout.simple_spinner_dropdown_item,
-                    floors
-                )
-            }?.also { adapter ->
-                // Specify the layout to use when the list of choices appears
-                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-                // Apply the adapter to the spinner
-                if (dropDown != null) {
-                    dropDown.adapter = adapter
+        //get the list of string to an adapter for dropDown(Spinner)
+        val adapter = activity?.let {
+            ArrayAdapter.createFromResource(
+                it,
+                R.array.floors,
+                android.R.layout.simple_spinner_item
+            )
+                ?.also { adapter ->
+                    // Specify the layout to use when the list of choices appears
+                    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+                    // Apply the adapter to the spinner
+                    if (dropDown != null) {
+                        dropDown.adapter = adapter
+                    }
                 }
-            }
+        }
 
 
 
