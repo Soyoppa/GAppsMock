@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="648dp"
+        android:orientation="vertical">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView4"
+            android:name="com.globe.gappsmock.ActivitiesFragment"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:layout_marginTop="150dp"
+            tools:layout="@layout/fragment_building" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnActivities"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            app:icon="@drawable/ico_calendar"
+            app:iconSize="@android:dimen/app_icon_size"
+            app:iconTint="#3F51B5" />
+
+        <Button
+            android:id="@+id/btnBuilding"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            app:icon="@drawable/ico_building"
+            app:iconSize="@android:dimen/app_icon_size"
+            app:iconTint="#3F51B5" />
+
+        <Button
+            android:id="@+id/btnApproval"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            app:icon="@drawable/ico_approval"
+            app:iconSize="@android:dimen/app_icon_size"
+            app:iconTint="#3F51B5" />
+
+        <Button
+            android:id="@+id/btnHealthCheck"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"
+            app:icon="@drawable/ico_check"
+            app:iconSize="@android:dimen/app_icon_size"
+            app:iconTint="#3F51B5" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>

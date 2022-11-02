@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GappsMock</string>
+    <string name="selected_item">Selected item:</string>
+    <string name="question1">Do you have Covid Symptoms?</string>
+    <string name="question2">Are you fully vaccinated?</string>
+    <string name="question3">Are you goin to the office?</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="floors">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+</resources>
